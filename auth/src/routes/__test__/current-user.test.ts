@@ -1,7 +1,5 @@
 import request from "supertest";
 import { app } from "../../app";
-import e from 'express';
-import { currentUser } from '../../middleware/current-user';
 
 it('responds with details about the current user', async () => {
   const cookie = await signin();
